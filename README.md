@@ -1,2 +1,2 @@
 # GG
-The repository for the meme GG language.
+GG is a simple meme programming language, used to make basic apps.

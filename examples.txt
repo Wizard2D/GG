@@ -1,0 +1,35 @@
+-Hello World Program:
+@con iostr. ^^The main library.
+
+str Text = "Hello, World!"; ^^The text you will be printing, but it isn't needed to place it in a variable.
+
+/start AppLoop: ^^Start the loop(executes every frame)
+  Console:WriteLine(Text); ^^Print out the string.
+  wait(0.5); ^^Slow it down so it doesn't crash.
+/end AppLoop ^^End the loop codeblock.
+
+-Gamer Text Program:
+^^This program is mostly built-in to the GG programming language.
+@con iostr.
+@con stdgg. ^^Standard library for GG(Add-On)
+
+/startOnce AppOnce: ^^This code executes once.
+  GGSQ:::@GamerText(100); ^^The argument is the amount of lines. It adds the text to the text buffer.
+/endOnce AppOnce; ^^End the execution codeblock
+
+/start AppLoop: ^^Note: you can name the apploop whatever u want.
+  GGSQ:::@PrintFromBuffer(); ^^Print everything from the text buffer.
+/end AppLoop
+-Text-Based GG Animation(a man that dances a.k.a. a dancing stickman.):
+@con iostr.
+@con stdgg.
+
+/startOnce AppOnce:
+GGSQ:::@DanceAnimation(20); ^^Arguments: Seconds. Loads the animation in to the text buffer.
+/endOnce AppOnce
+
+/start AppLoop:
+  GGSQ::PrintFromBuffer();
+  wait(0.1);
+/end AppLoop
+--That's it folks!
